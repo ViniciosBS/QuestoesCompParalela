@@ -1,5 +1,4 @@
 int max(int a, int b) { return (a > b)? a : b; }
-
 static int knapSack(long int W, long int N, int wt[], int val[]){
 	int *K = (int*) malloc((W+1)*sizeof(int));
 	int *Kp = (int*) malloc((W+1)*sizeof(int));
