@@ -7,7 +7,7 @@ int main (int argc, char *argv[]) {
   int max = 40; 
   #pragma omp parallel
     #pragma omp single
-      for (int n = 1; n <= max; n++) /* bottom-up */
+      for (int n = 1; n <= max; n++)
         #pragma omp task
           printf ("%d: %d %ld\n", omp_get_thread_num(), n, fib (n));
   return 0;
